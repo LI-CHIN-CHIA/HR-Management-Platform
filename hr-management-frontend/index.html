@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Management Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>HR Management Platform</h1>
+      </header>
+      <main>
+        <!-- Employee List Section -->
+        <div id="employee-list">
+          <h2>Employee List</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="employee-table-body">
+              <!-- Rows will be dynamically generated here -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Add Employee and Upload Excel Section -->
+        <div id="employee-actions">
+          <div id="add-employee">
+            <h2>Add Employee</h2>
+            <form id="employee-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="position">Position:</label>
+              <input type="text" id="position" name="position" required />
+
+              <button type="submit">Add Employee</button>
+            </form>
+          </div>
+
+          <div id="upload-excel">
+            <h2>Upload Excel File</h2>
+            <form id="upload-form">
+              <input
+                type="file"
+                id="file-input"
+                accept=".xlsx, .xls"
+                required
+              />
+              <button type="submit">Upload</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

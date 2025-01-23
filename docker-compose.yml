@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  frontend:
+    build: ./hr-management-frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - hr-management-network
+
+  backend:
+    build: ./hr-management-backend
+    ports:
+      - "8000:8000"
+    networks:
+      - hr-management-network
+
+networks:
+  hr-management-network:
+    driver: bridge

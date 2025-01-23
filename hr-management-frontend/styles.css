@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 1em;
+}
+
+#employee-list {
+  margin-bottom: 2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 0.5em;
+  text-align: left;
+}
+
+#employee-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#employee-form label,
+#employee-form input {
+  margin-bottom: 0.5em;
+}
+
+#employee-form button {
+  width: 100px;
+  padding: 0.5em;
+}
